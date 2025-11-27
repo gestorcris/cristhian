@@ -13,7 +13,56 @@ import { Router } from '@angular/router';
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
+  productos = [
+    {
+      id: 1, 
+      titulo: "SAAAAAAAAAAAA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    },
 
+    {
+      id: 2, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    },
+
+    {
+      id: 3, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    },
+
+    {
+      id: 4, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    },
+
+    {
+      id: 5, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    },
+
+    {
+      id: 6, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:120,
+      descripcion: "asdfghjkl",
+      imagen: "assets/fotos/3.webp"
+    }
+
+  ]
   constructor(
     private router: Router
   ) { }
@@ -22,8 +71,8 @@ export class PrincipalPage implements OnInit {
   }
 
 
-  irvermas(){
-    this.router.navigate(['/vermas'])
+  irvermas(producto:any){
+    this.router.navigate(['/vermas'], { queryParams: producto });
   }
 
 }
