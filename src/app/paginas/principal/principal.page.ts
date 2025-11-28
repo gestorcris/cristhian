@@ -18,7 +18,7 @@ export class PrincipalPage implements OnInit {
       id: 1, 
       titulo: "SAAAAAAAAAAAA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POTATO 1",
       imagen: "assets/fotos/3.webp"
     },
 
@@ -26,7 +26,7 @@ export class PrincipalPage implements OnInit {
       id: 2, 
       titulo: "SOY UNA PAPA FEA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POPTATO 2",
       imagen: "assets/fotos/3.webp"
     },
 
@@ -34,7 +34,7 @@ export class PrincipalPage implements OnInit {
       id: 3, 
       titulo: "SOY UNA PAPA FEA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POPATO 3",
       imagen: "assets/fotos/3.webp"
     },
 
@@ -42,7 +42,7 @@ export class PrincipalPage implements OnInit {
       id: 4, 
       titulo: "SOY UNA PAPA FEA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POPATO 4",
       imagen: "assets/fotos/3.webp"
     },
 
@@ -50,7 +50,7 @@ export class PrincipalPage implements OnInit {
       id: 5, 
       titulo: "SOY UNA PAPA FEA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POPATO 5",
       imagen: "assets/fotos/3.webp"
     },
 
@@ -58,7 +58,7 @@ export class PrincipalPage implements OnInit {
       id: 6, 
       titulo: "SOY UNA PAPA FEA",
       precio:120,
-      descripcion: "asdfghjkl",
+      descripcion: "POPATO 6",
       imagen: "assets/fotos/3.webp"
     }
 
@@ -74,5 +74,6 @@ export class PrincipalPage implements OnInit {
   irvermas(producto:any){
     this.router.navigate(['/vermas'], { queryParams: producto });
   }
+
 
 }

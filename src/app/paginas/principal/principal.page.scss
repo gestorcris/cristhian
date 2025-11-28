@@ -18,6 +18,21 @@ h1, h2 {
     ;
 }
 
+.img {
+     width: 100%;
+     border-radius:16px ;
+     margin-bottom: 15px;
+
+}
+
+
+
+.carg {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 10px;
+}
 
 .carg {
   display: grid;

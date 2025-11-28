@@ -5,6 +5,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+<div  class="carg">
+    <ion-card  class="card2"    *ngFor="let p of productos" (click)="irvermas(p)"  >
+      <img [src]="p.imagen" class="img"  />
+    <ion-card-header>
+       <ion-card-title class="titulo"> {{p.titulo}} </ion-card-title>
+       <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
+    </ion-card-header>
+    </ion-card>
+  </div>
 
   <ion-card>
      <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
@@ -22,7 +31,7 @@
   </ion-card-header>  
   
     <ion-text>
-    <h2>David es un crack</h2>
+    <h2>David no sabe nada</h2>
     </ion-text>
   </ion-card>
   
@@ -66,27 +75,49 @@
 </ion-card>
   
 
-<div  class="carg">
-    <ion-card  class="card2"    *ngFor="let p of productos" (click)="irvermas(p)"  >
-      <img [src]="p.imagen" class="img"  />
-    <ion-card-header>
-       <ion-card-title class="titulo"> {{p.titulo}} </ion-card-title>
-       <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
+<ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
+
+<div class="carg">
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
+
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
 
 
-    </ion-card-header>
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
 
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
 
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
 
-
-    </ion-card>
-
-
-
-
-  </div>
-
-
-
+  <ion-card class="card2">
+     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
+     <ion-text><h1>HOLA </h1></ion-text>
+    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+  </ion-card>
+</div>
 
 </ion-content>
