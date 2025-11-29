@@ -20,7 +20,7 @@ export class PrincipalPage implements OnInit {
       titulo: "PAPA PAPA",
       precio: 1,
       descripcion: "POTATO 1",
-      imagen: "assets/fotos/3.webp"
+      imagen: "assets/fotos/pp.jpeg"
     },
 
     {
@@ -28,7 +28,7 @@ export class PrincipalPage implements OnInit {
       titulo: "HIJO PAPA",
       precio:2,
       descripcion: "POPTATO 2",
-      imagen: "assets/fotos/3.webp"
+      imagen: "assets/fotos/ppp.jpg"
     },
 
     {
@@ -36,7 +36,7 @@ export class PrincipalPage implements OnInit {
       titulo: "TIO PAPA",
       precio:3,
       descripcion: "POPATO 3",
-      imagen: "assets/fotos/3.webp"
+      imagen: "assets/fotos/pn.png"
     },
 
     {
