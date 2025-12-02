@@ -52,7 +52,7 @@ export class PrincipalPage implements OnInit {
       titulo: "PAPA POTATO",
       precio:5,
       descripcion: "POPATO 5",
-      imagen: "assets/fotos/3.webp"
+      imagen: "assets/fotos/ppp.jpg"
     },
 
     {
@@ -93,11 +93,12 @@ export class PrincipalPage implements OnInit {
       descripcion: "POPATO 10",
       imagen: "assets/fotos/3.webp"
 
-    }
-
-
-
+    }, 
+    
   ]
+
+  productosfiltrados= [...this.productos ];
+
   constructor(
     private router: Router
   ) { }
@@ -108,6 +109,22 @@ export class PrincipalPage implements OnInit {
 
   irvermas(producto:any){
     this.router.navigate(['/vermas'], { queryParams: producto });
+  }
+
+
+  filtrar(event:any){
+    const texto = (event.target.value || '').toLowerCase().trim();
+
+    if(texto === '') {
+      this.productosfiltrados = [...this.productos];
+      return;
+  }
+  this.productosfiltrados = this.productos.filter( 
+    p => p.titulo.toLowerCase().includes(texto) || 
+    p.titulo.toLowerCase().includes(texto) ||
+    p.precio.toString().includes(texto)
+  );
+
   }
 
 
