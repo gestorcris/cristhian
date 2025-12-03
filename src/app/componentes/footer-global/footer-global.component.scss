@@ -1,0 +1,39 @@
+.footer {
+  background: #0d053a;
+  padding: 1px 0;
+
+  display: flex;
+  justify-content: center;
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      display: flex;
+      flex-direction: column;   // icono arriba, texto abajo
+      align-items: center;      // centra ambos
+      text-decoration: none;
+
+      ion-icon {
+        font-size: 32px;
+        color: #ffffff;
+        transition: 0.3s;
+
+        &:hover {
+          color: #f39c12;
+          transform: scale(1.2);
+        }
+      }
+
+      span {
+        margin-top: 5px;
+        font-size: 13px;
+        color: #ffffff;
+        text-align: center;     // centra el texto
+      }
+    }
+  }
+}
