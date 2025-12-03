@@ -17,5 +17,17 @@ export const routes: Routes = [
   {
     path: 'vermas',
     loadComponent: () => import('./paginas/vermas/vermas.page').then( m => m.VermasPage)
+  },  {
+    path: 'cantidad',
+    loadComponent: () => import('./paginas/cantidad/cantidad.page').then( m => m.CANTIDADPage)
   },
+  {
+    path: 'formas',
+    loadComponent: () => import('./paginas/formas/formas.page').then( m => m.FORMASPage)
+  },
+  {
+    path: 'precios',
+    loadComponent: () => import('./paginas/precios/precios.page').then( m => m.PRECIOSPage)
+  },
+
 ];

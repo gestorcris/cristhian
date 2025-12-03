@@ -1,6 +1,7 @@
 .footer {
-  background: #0d053a;
+  background: #000000;
   padding: 1px 0;
+  border-top: 1px solid #0d31d4;
 
   display: flex;
   justify-content: center;
@@ -22,18 +23,9 @@
         color: #ffffff;
         transition: 0.3s;
 
-        &:hover {
-          color: #f39c12;
-          transform: scale(1.2);
-        }
       }
 
-      span {
-        margin-top: 5px;
-        font-size: 13px;
-        color: #ffffff;
-        text-align: center;     // centra el texto
-      }
     }
   }
+  
 }
