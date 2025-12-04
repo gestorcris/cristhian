@@ -1,12 +1,16 @@
 ion-card {
   border-radius: 20px;
-  border: 5px solid #0843c4;        /* borde */
+  border: 5px solid #0843c4;        
   box-shadow: 0 15px 25px rgba(255, 255, 255, 0.45);
   margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Georgia';
+  text-align: center;
 }
 
 h1, h2 {
   text-align: center;
+  
   margin-top: 10px;
   margin-bottom: 10px;
 }

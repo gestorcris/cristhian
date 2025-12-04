@@ -2,14 +2,17 @@
   background: #000000;
   padding: 1px 0;
   border-top: 1px solid #0d31d4;
+  
 
   display: flex;
   justify-content: center;
+ 
 
   &__icons {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap: 30px;
 
     a {
@@ -17,13 +20,21 @@
       flex-direction: column;   // icono arriba, texto abajo
       align-items: center;      // centra ambos
       text-decoration: none;
-
       ion-icon {
         font-size: 32px;
         color: #ffffff;
         transition: 0.3s;
+        
 
       }
+
+    }
+    b {
+      display: flex;
+      flex-direction: column;   // icono arriba, texto abajo
+      align-items: center;      // centra ambos
+      text-decoration: none;
+      text-decoration: underline;
 
     }
   }
