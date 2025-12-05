@@ -45,7 +45,7 @@ export class PrincipalPage implements OnInit {
       titulo: "SOBRINO PAPA",
       precio:4,
       descripcion: "POPATO 4",
-      imagen: "assets/fotos/3.webp"
+      imagen: "assets/fotos/pp.jpeg"
     },
 
     {
@@ -53,7 +53,7 @@ export class PrincipalPage implements OnInit {
       titulo: "PAPA POTATO",
       precio:5,
       descripcion: "POPATO 5",
-      imagen: "assets/fotos/ppp.jpg"
+      imagen: "assets/fotos/3.webp"
     },
 
     {
@@ -95,10 +95,94 @@ export class PrincipalPage implements OnInit {
       imagen: "assets/fotos/3.webp"
 
     }, 
+
+     {
+      id: 11, 
+      titulo: "PAPA PAPA",
+      precio: 11,
+      descripcion: "POTATO 1",
+      imagen: "assets/fotos/pp.jpeg"
+    },
+
+    {
+      id: 12, 
+      titulo: "HIJO PAPA",
+      precio:12,
+      descripcion: "POPTATO 2",
+      imagen: "assets/fotos/ppp.jpg"
+    },
+
+    {
+      id: 13, 
+      titulo: "TIO PAPA",
+      precio:13,
+      descripcion: "POPATO 3",
+      imagen: "assets/fotos/pn.png"
+    },
+
+    {
+      id: 14, 
+      titulo: "SOBRINO PAPA",
+      precio:14,
+      descripcion: "POPATO 4",
+      imagen: "assets/fotos/3.webp"
+    },
+
+    {
+      id: 15, 
+      titulo: "PAPA POTATO",
+      precio:15,
+      descripcion: "POPATO 5",
+      imagen: "assets/fotos/ppp.jpg"
+    },
+
+    {
+      id: 16, 
+      titulo: "AMIGO PAPA",
+      precio:16,
+      descripcion: "POPATO 6",
+      imagen: "assets/fotos/3.webp"
+    },
+    {
+       id: 17, 
+      titulo: "PAPA JOVEN",
+      precio:17,
+      descripcion: "POPATO 7",
+      imagen: "assets/fotos/3.webp"
+
+    },
+    {
+       id: 18, 
+      titulo: "VECINO PAPA",
+      precio:18,
+      descripcion: "POPATO 8",
+      imagen: "assets/fotos/3.webp"
+
+    },
+    {
+       id: 19, 
+      titulo: "SOY UNA PAPA",
+      precio:19,
+      descripcion: "POPATO 9",
+      imagen: "assets/fotos/3.webp"
+
+    },
+    {
+       id: 20, 
+      titulo: "SOY UNA PAPA FEA",
+      precio:20,
+      descripcion: "POPATO 10",
+      imagen: "assets/fotos/3.webp"
+
+    }, 
     
+    
+
+
   ]
 
   productosfiltrados= [...this.productos ];
+  preguntas: any;
 
   constructor(
     private router: Router
@@ -123,7 +207,7 @@ export class PrincipalPage implements OnInit {
   this.productosfiltrados = this.productos.filter( 
     p => p.titulo.toLowerCase().includes(texto) || 
     p.titulo.toLowerCase().includes(texto) ||
-    p.precio.toString().includes(texto)
+    p.precio.toString().includes(texto) 
   );
 
   }

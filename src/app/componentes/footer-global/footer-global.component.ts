@@ -24,6 +24,10 @@ export class FooterGlobalComponent  implements OnInit {
 
   }
   
+preguntas () { 
+    this.router.navigate(['/preguntas'])
 
+
+  }
 
 }
