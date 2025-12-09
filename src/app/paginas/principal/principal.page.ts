@@ -5,7 +5,8 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { Router } from '@angular/router';
 import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-global.component';
 import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
-
+import {ModalController} from '@ionic/angular/standalone'; //nuevo
+import { MasComponent } from 'src/app/componentes/mas/mas.component';
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.page.html',
@@ -185,7 +186,8 @@ export class PrincipalPage implements OnInit {
   preguntas: any;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private modalCtrl: ModalController, //esta linea es nueva
   ) { }
 
   ngOnInit() {
@@ -212,7 +214,15 @@ export class PrincipalPage implements OnInit {
 
   }
   
+  async ver_modal(producto: any){
+    const modal = await this.modalCtrl.create({
+      component: MasComponent,
+      componentProps: { imagen: producto.imagen,
+        titulo: producto.titulo },
+        cssClass: 'estilo_modal'
+});
+await modal.present();
 
 
-
+}
 }
