@@ -1,0 +1,19 @@
+[
+    {
+        "categoria": "PAPA GRANDES",
+        "Subcategoria": ["GRANDES", "VIEJAS", "MAYORES"]
+    },
+    {
+        "categoria": "TIPO DE PAPA",
+        "Subcategoria": ["GORDA", "BLANDA", "FLACA"]
+    },
+    {
+        "categoria": "COLOR DE PAPA",
+        "Subcategoria": ["CAFECES", "BLANCAS", "AMARILLO"]
+    },
+    {
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "Subcategoria": ["COSTA", "SIERRA", "ORIENTE"]
+    }
+    
+]
