@@ -214,6 +214,24 @@ export class PrincipalPage implements OnInit {
     this.productosfiltrados = this.productos.filter(p => p.subcategoria === subcategoria);
   }
 
+  imagenesCarrusel = [
+  'assets/fotos/123.png',
+  'assets/fotos/456.png',
+  'assets/fotos/8552.png',
+  
+];
+
+slideOpts = {
+  initialSlide: 0,
+  speed: 600,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
+};
+
+
+
   mostrarTodos() {
     this.productosfiltrados = [...this.productos];
   }

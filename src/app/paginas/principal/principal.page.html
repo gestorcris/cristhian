@@ -14,7 +14,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="fondo" [fullscreen]="true">
+<swiper-container
+  slides-per-view="1"
+  loop="true"
+  autoplay-delay="3000"
+  pagination="true"
+  class="swiper-banner"
+>
+  <swiper-slide *ngFor="let img of imagenesCarrusel">
+    <img [src]="img" class="img-carousel" />
+  </swiper-slide>
+</swiper-container>
+
+
+
   <nav class="categorias">
     <ul class="menu-horizontal">
       <li class="item" *ngFor="let c of categorias">
@@ -153,6 +167,9 @@
     <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
 </ion-card>
 </div>
+
+
+
 </ion-content>
 
 <app-footer-global></app-footer-global>
