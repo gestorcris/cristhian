@@ -12,3 +12,7 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
 });
+
+import { register } from 'swiper/element/bundle';
+
+register();

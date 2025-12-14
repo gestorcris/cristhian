@@ -1,6 +1,6 @@
 ion-card {
   border-radius: 20px;
-  border: 5px solid #0843c4;        
+  border: 5px solid #c4c108;        
   box-shadow: 0 15px 25px rgba(255, 255, 255, 0.45);
   margin-bottom: 15px;
   font-weight: bold;
@@ -38,5 +38,80 @@ h1, h2 {
     padding: 30px;
 }
 
+.categorias {
+  background: #fcff45;
+  border-bottom: 1px solid #e9ff23;
+  padding: 8px 0;
+}
 
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
 
+.menu-horizontal .item {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: #000000;
+  transition: color .2s;
+}
+
+.menu-horizontal .item:hover {
+  color: #000000;
+}
+
+/* SUBMENÚ */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background: #e1fa0394;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .25s ease;
+  z-index: 999;
+}
+
+.item:hover .submenu {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.submenu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.submenu li:hover {
+  background: #ffffff;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 220px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fondo {
+ --background: #000000;
+
+}

@@ -14,9 +14,40 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="fondo" [fullscreen]="true">
+<swiper-container
+  slides-per-view="1"
+  loop="true"
+  autoplay-delay="3000"
+  pagination="true"
+  class="swiper-banner"
+>
+  <swiper-slide *ngFor="let img of imagenesCarrusel">
+    <img [src]="img" class="img-carousel" />
+  </swiper-slide>
+</swiper-container>
+
+
+
+  <nav class="categorias">
+    <ul class="menu-horizontal">
+      <li class="item" *ngFor="let c of categorias">
+        {{c.categoria}}
+
+        <ul class="submenu">
+          <li class="subitem" *ngFor="let sc of c.Subcategoria" (click)="filtrarPorSubcategoria(sc)">
+            {{sc}}
+          </li>
+
+        </ul>
+      </li>
+      <li class="item" (click)="mostrarTodos()">Mostrar Todos</li>
+
+    </ul>
+
+  </nav>
   <ion-searchbar placeholder="BUSCAR PAPA"
-  (ionImput)="filtrar($event)"> 
+  (ionInput)="filtrar($event)"> 
 
   </ion-searchbar>
 
@@ -28,6 +59,7 @@
        <ion-card-title class="titulo" (click)="irvermas(p)"> {{p.titulo}} </ion-card-title>
        <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
     </ion-card-header>
+    <ion-card-content>{{p.descripcion}}</ion-card-content>
     </ion-card>
   </div>
 
@@ -132,9 +164,12 @@
      <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
      <ion-text><h1>HOLA </h1></ion-text>
     <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
+</ion-card>
+</div>
 
- 
 
+
+</ion-content>
 
 <app-footer-global>
   

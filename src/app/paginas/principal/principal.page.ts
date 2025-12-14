@@ -7,16 +7,25 @@ import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-
 import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
 import {ModalController} from '@ionic/angular/standalone'; //nuevo
 import { MasComponent } from 'src/app/componentes/mas/mas.component';
+import { HttpClient, HttpClientModule,  } from '@angular/common/http';
+
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent,FooterGlobalComponent]
+  imports: [HttpClientModule,IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent,FooterGlobalComponent]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
+
+
+
 export class PrincipalPage implements OnInit {
-  productos = [
+
+   productos: any []=[]
+   productosfiltrados: any []=[];
+   categorias: any;
+/*   productos = [
     {
       id: 1, 
       titulo: "PAPA PAPA",
@@ -180,19 +189,65 @@ export class PrincipalPage implements OnInit {
     
 
 
-  ]
+  ] */
 
-  productosfiltrados= [...this.productos ];
+ 
   preguntas: any;
 
   constructor(
     private router: Router,
     private modalCtrl: ModalController, //esta linea es nueva
+    private http: HttpClient,
   ) { }
 
   ngOnInit() {
+    this.cargarProductos();
+    this.cargarCategorias();
+
+  }
+  filtarCategoria(nombre:string){
+    this.productosfiltrados = this.productos.filter(p=> p.categoria===nombre);
   }
 
+  /*NUEVO */
+  filtrarPorSubcategoria(subcategoria: string) {
+    this.productosfiltrados = this.productos.filter(p => p.subcategoria === subcategoria);
+  }
+
+  imagenesCarrusel = [
+  'assets/fotos/123.png',
+  'assets/fotos/456.png',
+  'assets/fotos/8552.png',
+  
+];
+
+slideOpts = {
+  initialSlide: 0,
+  speed: 600,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
+};
+
+
+
+  mostrarTodos() {
+    this.productosfiltrados = [...this.productos];
+  }
+  cargarCategorias(){
+    this.http.get('assets/BD/categorias.json').subscribe((data:any)=>{
+      this.categorias = data;
+    });
+
+  }
+
+  cargarProductos(){
+    this.http.get('assets/BD/productos.json').subscribe((data:any)=>{
+      this.productos=data;
+      this.productosfiltrados=[...this.productos];
+    });  
+  }
 
   irvermas(producto:any){
     this.router.navigate(['/vermas'], { queryParams: producto });
@@ -207,9 +262,9 @@ export class PrincipalPage implements OnInit {
       return;
   }
   this.productosfiltrados = this.productos.filter( 
-    p => p.titulo.toLowerCase().includes(texto) || 
-    p.titulo.toLowerCase().includes(texto) ||
-    p.precio.toString().includes(texto) 
+    p => p.titulo.toLowerCase().includes(texto)/* || 
+     p.titulo.toLowerCase().includes(texto) ||
+    p.precio.toString().includes(texto)  */
   );
 
   }

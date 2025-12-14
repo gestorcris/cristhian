@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "titulo": "PAPA PAPA",
+        "precio": 1,
+        "descripcion": "PAPA PAPA ES EL MAYOR DE TODAS LAS PPAS Y ES EL ENCARGADO DE CUIDARLOS A QUE NADA LES PASE",
+        "imagen": "assets/fotos/pp.jpeg",
+        "categoria": "PAPA GRANDES",
+        "subcategoria": "PAPAS MAYORES"
+    },
+    {
+        "id": 2,
+        "titulo": "HIJO PAPA",
+        "precio":2,
+        "descripcion": "POPTATO 2",
+        "imagen": "assets/fotos/ppp.jpg",
+        "categoria": "PAPA GRANDES",
+        "subcategoria": "VIEJAS"
+    },
+    {
+        "id": 3,
+        "titulo": "Gatito panzon",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/pn.png",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 4,
+        "titulo": "b",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/pp.jpeg",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Perros"
+    },
+    {
+        "id": 5,
+        "titulo": "c",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Videojuegos",
+        "subcategoria": "Guerra de Consolas"
+    },
+    {
+        "id": 6,
+        "titulo": "d",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Clásicos de Internet",
+        "subcategoria": "Rage Comics"
+    },
+    {
+        "id": 7,
+        "titulo": "e",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Humor Negro",
+        "subcategoria": "Cotidiano"
+    },
+    {
+        "id": 8,
+        "titulo": "aa",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 9,
+        "titulo": "bb",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 10,
+        "titulo": "cc",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 11,
+        "titulo": "Sistema de gestion de tareas",
+        "des": "Sigesta es una plataforma integral diseñada para optimizar el flujo de trabajo y la organización personal. Permite crear, asignar y monitorear tareas en tiempo real, garantizando que nunca pierdas de vista tus objetivos prioritarios mediante una interfaz intuitiva y eficiente",
+        "imagen": "assets/fotos/pp.jpeg",
+        "categoria": "Imágenes Random",
+        "subcategoria": "WTF"
+    },
+    {
+        "id": 12,
+        "titulo": "a",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/ppp.jpg",
+        "categoria": "Humor Absurdo",
+        "subcategoria": "Surrealistas"
+    },
+    {
+        "id": 13,
+        "titulo": "Gatito panzon",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/pn.png",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 14,
+        "titulo": "b",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Pájaros"
+    },
+    {
+        "id": 15,
+        "titulo": "c",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/ppp.jpg",
+        "categoria": "Memes de Videojuegos",
+        "subcategoria": "PC Master Race"
+    },
+    {
+        "id": 16,
+        "titulo": "d",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Clásicos de Internet",
+        "subcategoria": "Advice Animals"
+    },
+    {
+        "id": 17,
+        "titulo": "e",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Humor Negro",
+        "subcategoria": "Históricos"
+    },
+    {
+        "id": 18,
+        "titulo": "aa",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 19,
+        "titulo": "bb",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    },
+    {
+        "id": 20,
+        "titulo": "cc",
+        "des": "Un gatito panzon a tan solo: $100",
+        "imagen": "assets/fotos/3.webp",
+        "categoria": "Memes de Animales",
+        "subcategoria": "Gatos"
+    }
+]
