@@ -2,93 +2,64 @@
 </app-header-global>
 
 <ion-content class="fondo" [fullscreen]="true">
-<swiper-container
-  slides-per-view="1"
-  loop="true"
-  autoplay-delay="3000"
-  pagination="true"
-  class="swiper-banner"
->
-  <swiper-slide *ngFor="let img of imagenesCarrusel">
-    <img [src]="img" class="img-carousel" />
-  </swiper-slide>
-</swiper-container>
+  <main>
+    <swiper-container
+    slides-per-view="1"
+    loop="true"
+    autoplay-delay="3000"
+    pagination="true"
+    class="swiper-banner"
+    >
+    <swiper-slide *ngFor="let img of imagenesCarrusel">
+      <img [src]="img" class="img-carousel" />
+    </swiper-slide>
+    </swiper-container>
 
+    <nav class="categorias">
+      <ul class="menu-horizontal">
+        <li class="item" *ngFor="let c of categorias">
+          {{c.categoria}}
+          
+          <ul class="submenu">
+              <li class="subitem" *ngFor="let sc of c.Subcategoria" (click)="filtrarPorSubcategoria(sc)">
+                {{sc}}
+              </li>
 
-
-  <nav class="categorias">
-    <ul class="menu-horizontal">
-      <li class="item" *ngFor="let c of categorias">
-        {{c.categoria}}
-
-        <ul class="submenu">
-          <li class="subitem" *ngFor="let sc of c.Subcategoria" (click)="filtrarPorSubcategoria(sc)">
-            {{sc}}
+            </ul>
           </li>
+          <li class="item" (click)="mostrarTodos()">Mostrar Todos</li>
 
         </ul>
-      </li>
-      <li class="item" (click)="mostrarTodos()">Mostrar Todos</li>
 
-    </ul>
-
-  </nav>
+    </nav>
   
+
   <ion-searchbar placeholder="BUSCAR PAPA" (ionInput)="filtrar($event)"> 
   </ion-searchbar>
 
+  <section>
+    <article class="carg">
 
-<div  class="carg">
-    <ion-card  class="card2"    *ngFor="let p of productosfiltrados"   >
-      <img [src]="p.imagen" class="img" (click)="ver_modal(p)"/>
-    <ion-card-header>
-      <ion-card-title class="titulo" (click)="irvermas(p)"> {{p.titulo}} </ion-card-title>
-      <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>{{p.descripcion}}</ion-card-content>
-    </ion-card>
-  </div>
+      <ion-card class="card2" *ngFor="let p of productosfiltrados">
+        
+        <img alt="Silhouette of mountains" [src]="p.imagen" class="img" (click)="ver_modal(p)">
+        
+        <ion-card-header>
+          <ion-card-title (click)="irvermas(p)">{{p.titulo}}</ion-card-title>
+          <ion-card-subtitle>Precio : ${{p.precio}}</ion-card-subtitle>
+        </ion-card-header>
+        
+        <ion-card-content>
+          {{p.descripcion}}
+        </ion-card-content>
+      </ion-card>
+    </article>
+  </section>
 
   
-  <ion-card>
-  <ion-card-header>
-    <ion-card-title>PERRITO CON GAFAS</ion-card-title>
-    <ion-card-subtitle>BONITO</ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-list>
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img alt="Silhouette of mountains" src="assets/fotos/2.jpg" />
-        </ion-thumbnail>
-        <ion-label>SUS GAFAS AZULES</ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img alt="Silhouette of mountains" src="assets/fotos/2.jpg" />
-        </ion-thumbnail>
-        <ion-label>ES PEQUEÑO</ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img alt="Silhouette of mountains" src="assets/fotos/2.jpg" />
-        </ion-thumbnail>
-        <ion-label>ES BONITO</ion-label>
-      </ion-item>
-
-      <ion-item lines="none">
-        <ion-thumbnail slot="start">
-          <img alt="Silhouette of mountains" src="assets/fotos/2.jpg" />
-        </ion-thumbnail>
-        <ion-label>TIENE SARNA</ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-card-content>
-</ion-card>
-
-<app-footer-global>
   
-</app-footer-global>
+</main>
+  <app-footer-global>
+    
+  </app-footer-global>
 </ion-content>

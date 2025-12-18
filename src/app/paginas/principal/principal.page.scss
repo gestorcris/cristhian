@@ -1,19 +1,12 @@
 ion-card {
   border-radius: 20px;
   border: 5px solid #c4c108;        
-  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.45);
   margin-bottom: 15px;
   font-weight: bold;
   font-family: 'Georgia';
   text-align: center;
 }
 
-h1, h2 {
-  text-align: center;
-  
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .card2 {
     width: 100%;
     margin: 10px auto;
@@ -22,10 +15,8 @@ h1, h2 {
 }
 
 .img {
-     width: 100%;
-     border-radius:250px ;
-     margin-bottom: 16px;
-
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 
@@ -109,7 +100,7 @@ h1, h2 {
   height: 100%;
   object-fit: cover;
 }
-
+//ojo al fondo negro
 .fondo {
  --background: #000000;
 
