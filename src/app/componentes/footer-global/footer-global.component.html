@@ -1,43 +1,31 @@
 <ion-footer class="footer">
-  <div class="redes-sociales">
-    <a href="https://www.facebook.com" target="_blank">
-      <ion-icon name="logo-facebook" style="color: blue;"> </ion-icon>
-      <span>Facebook</span>
+  <div class="redes">
+    <a href="https://www.facebook.com/" target="_blank">
+      <ion-icon name="logo-facebook"  class="icono-footer" style="color: #0765FC;"></ion-icon>
+      Facebook
     </a>
-
+  
     <a href="https://www.youtube.com/" target="_blank">
-      <ion-icon name="logo-youtube" style="color: rgb(209, 3, 3);"></ion-icon>
-      <span>YouTube</span>
+      <ion-icon name="logo-youtube"  class="icono-footer" style="color: #FF0033;"></ion-icon>
+      Youtube
     </a>
 
     <a href="https://wa.me/" target="_blank">
-      <ion-icon name="logo-whatsapp" style="color: aquamarine;" ></ion-icon>
-      <span>Whatsapp</span>
-    </a>
-
-    <a href="https://www.instagram.com/" target="_blank">
-      <ion-icon name="logo-instagram" style="color:rgb(192, 46, 27);"></ion-icon>
-      <span>instagram</span>
+      <ion-icon name="logo-whatsapp" class="icono-footer" style="color: #39C762;"></ion-icon>
+      Whatsapp
     </a>
   </div>
 
-  <div class="enlaces-rapidos">
-    <ion-button>
-      <a routerLink="/cantidad" (click)="navegar()">CANTIDADES DE PAPAS</a>
-    </ion-button>
-
-    <ion-button>
-      <a routerLink="/formas" (click)="navegar()">FORMAS DE PAPA</a>
-    </ion-button>
-
-    <ion-button>
-      <a routerLink="/precios" (click)="navegar()">PRECIOS DE PAPAS</a>
-    </ion-button>
-    
-    <ion-button>
-      <a routerLink="/preguntas"  (click)="preguntas()">PREGUNTAS FRECUENTES</a>
-    </ion-button>
+  <div class="redes">
+    <ion-button  class="a1"><a routerLink="/cantidad" (click)="navegar()">Cantidad</a></ion-button>
+    <ion-button  class="a1"><a routerLink="/preguntas" (click)="preguntas()">Preguntas Frecuentes</a></ion-button>
+    <ion-button  class="a1"><a routerLink="/formas" (click)="formas()">Formas</a></ion-button>
+    <ion-button  class="a1"><a routerLink="/precios" (click)="precios()">Precios</a></ion-button>
 
   </div>
   
+  <h5 class="copyright">
+    Derechos Reservados © 2024 Cristhian
+  </h5>
+
 </ion-footer>

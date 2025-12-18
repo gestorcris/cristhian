@@ -1,74 +1,32 @@
-ion-footer.footer {
-  background-color: yellow;
-  color: black;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+
+.redes{
+    display: grid;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));   
 }
 
-.redes-sociales {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.redes-sociales a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
-.redes-sociales ion-icon {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
-.enlaces-rapidos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-@media (max-width: 768px) {
-  .enlaces-rapidos {
+a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 5px;
+    display: flex;
     flex-direction: column;
+}
+
+.icono-footer{
     width: 100%;
-  }
+    font-size: 25px;
+    margin-bottom: 9px;
 
-  .enlaces-rapidos ion-button {
-    width: 90%;
-    max-width: 300px;
-  }
 }
 
-.enlaces-rapidos a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* Override inline styles for icons to ensure they are visible on yellow background */
-.redes-sociales a[href*="facebook"] ion-icon {
-  color: #3b5998 !important;
-}
-
-.redes-sociales a[href*="youtube"] ion-icon {
-  color: #ff0000 !important;
-}
-
-.redes-sociales a[href*="wa.me"] ion-icon {
-  color: #25d366 !important;
-}
-
-.redes-sociales a[href*="instagram"] ion-icon {
-  color: #e4405f !important;
+.copyright{
+    text-align: center;
+    color: #ffffffd1;
+    margin-bottom: 10px;
 }

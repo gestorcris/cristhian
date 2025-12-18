@@ -24,14 +24,18 @@ export class FooterGlobalComponent  implements OnInit {
 
   navegar () { 
     this.router.navigate(['/cantidad'])
+  }
 
+  formas(){
+    this.router.navigate(['/formas'])
+  }
 
+  precios(){
+    this.router.navigate(['/precios'])
   }
   
 preguntas () { 
     this.router.navigate(['/preguntas'])
-
-
   }
 
 }
