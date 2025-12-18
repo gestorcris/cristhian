@@ -3,6 +3,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import {} from '@ionic/angular/standalone';
 import { IonicModule } from '@ionic/angular';
 import { Router, RouterModule } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { logoFacebook, logoYoutube, logoWhatsapp, logoInstagram } from 'ionicons/icons';
 
 @Component({
   selector: 'app-footer-global',
@@ -14,7 +16,9 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class FooterGlobalComponent  implements OnInit {
 
-  constructor(private router:Router ) { }
+  constructor(private router:Router ) { 
+    addIcons({ logoFacebook, logoYoutube, logoWhatsapp, logoInstagram });
+  }
 
   ngOnInit() {}
 
