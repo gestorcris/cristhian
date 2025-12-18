@@ -1,27 +1,16 @@
 <ion-footer class="footer">
-  <div class="footer__icons">
+  <div class="redes-sociales">
     <a href="https://www.facebook.com" target="_blank">
       <ion-icon name="logo-facebook" style="color: blue;"> </ion-icon>
       <span>Facebook</span>
     </a>
 
-    <a href="https://www.youtube.com/watch?v=Be9OXqaBaBw&list=RDBe9OXqaBaBw&start_radio=1" target="_blank">
+    <a href="https://www.youtube.com/" target="_blank">
       <ion-icon name="logo-youtube" style="color: rgb(209, 3, 3);"></ion-icon>
       <span>YouTube</span>
     </a>
 
-    
-
-    <div class="Tipo de PAPA">
-    <a routerLink="/cantidad"(Click)="navegar()">CANTIDADES DE PAPAS</a>
-    <a routerLink="/formas"(Click)="navegar()">FORMAS DE PAPA</a>
-    <a routerLink="/precios"(Click)="navegar()">PRECIOS DE PAPAS</a>
-
-     <a routerLink="/preguntas" style="color: beige;" (click)="preguntas()">PREGUNTAS FRECUENTES</a>
-
-    </div>
-
-    <a href="https://wa.me/593963229333" target="_blank">
+    <a href="https://wa.me/" target="_blank">
       <ion-icon name="logo-whatsapp" style="color: aquamarine;" ></ion-icon>
       <span>Whatsapp</span>
     </a>
@@ -30,6 +19,24 @@
       <ion-icon name="logo-instagram" style="color:rgb(192, 46, 27);"></ion-icon>
       <span>instagram</span>
     </a>
+  </div>
+
+  <div class="enlaces-rapidos">
+    <ion-button>
+      <a routerLink="/cantidad" (click)="navegar()">CANTIDADES DE PAPAS</a>
+    </ion-button>
+
+    <ion-button>
+      <a routerLink="/formas" (click)="navegar()">FORMAS DE PAPA</a>
+    </ion-button>
+
+    <ion-button>
+      <a routerLink="/precios" (click)="navegar()">PRECIOS DE PAPAS</a>
+    </ion-button>
+    
+    <ion-button>
+      <a routerLink="/preguntas"  (click)="preguntas()">PREGUNTAS FRECUENTES</a>
+    </ion-button>
 
   </div>
   

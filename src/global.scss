@@ -9,6 +9,11 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+/* --- CORRECCIÓN: Los @use van primero --- */
+@use 'swiper/css';
+@use 'swiper/css/autoplay';
+@use 'swiper/css/pagination';
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -25,9 +30,6 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 @import '@ionic/angular/css/palettes/dark.system.css';
-@import 'swiper/css';
-@import 'swiper/css/autoplay';
-@import 'swiper/css/pagination';
 
 
 /**
@@ -39,13 +41,11 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+
 
 .estilo_modal::part(backdrop)  {
    --backdrop-opacity: 1 ;
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-
-
 }

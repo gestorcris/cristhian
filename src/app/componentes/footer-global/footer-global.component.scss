@@ -1,48 +1,74 @@
-.footer__icons{
-  background: #d6b603;
+ion-footer.footer {
+  background-color: yellow;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
-.footer {
-  padding: 1px 0;
-  border-top: 1px solid #d4d10d;
-  
-  
-
+.redes-sociales a {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.redes-sociales ion-icon {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.enlaces-rapidos {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
- 
+  align-items: center;
+  gap: 10px;
+}
 
-  &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 30px;
-
-    a {
-      display: flex;
-      flex-direction: column;   // icono arriba, texto abajo
-      align-items: center;      // centra ambos
-      text-decoration: none;
-      ion-icon {
-        font-size: 32px;
-        color: #ffffff;
-        transition: 0.3s;
-        
-
-      }
-
-    }
-
-    b {
-      display: flex;
-      flex-direction: column;   // icono arriba, texto abajo
-      align-items: center;      // centra ambos
-      text-decoration: none;
-      text-decoration: underline;
-
-    }
+@media (max-width: 768px) {
+  .enlaces-rapidos {
+    flex-direction: column;
+    width: 100%;
   }
-  
+
+  .enlaces-rapidos ion-button {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+.enlaces-rapidos a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Override inline styles for icons to ensure they are visible on yellow background */
+.redes-sociales a[href*="facebook"] ion-icon {
+  color: #3b5998 !important;
+}
+
+.redes-sociales a[href*="youtube"] ion-icon {
+  color: #ff0000 !important;
+}
+
+.redes-sociales a[href*="wa.me"] ion-icon {
+  color: #25d366 !important;
+}
+
+.redes-sociales a[href*="instagram"] ion-icon {
+  color: #e4405f !important;
 }

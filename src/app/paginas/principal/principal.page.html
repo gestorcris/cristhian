@@ -1,18 +1,5 @@
-
-
-
 <app-header-global> 
-
-  
 </app-header-global>
-
-
-
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> POTATO PROGRAMMER</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content class="fondo" [fullscreen]="true">
 <swiper-container
@@ -46,9 +33,8 @@
     </ul>
 
   </nav>
-  <ion-searchbar placeholder="BUSCAR PAPA"
-  (ionInput)="filtrar($event)"> 
-
+  
+  <ion-searchbar placeholder="BUSCAR PAPA" (ionInput)="filtrar($event)"> 
   </ion-searchbar>
 
 
@@ -56,32 +42,13 @@
     <ion-card  class="card2"    *ngFor="let p of productosfiltrados"   >
       <img [src]="p.imagen" class="img" (click)="ver_modal(p)"/>
     <ion-card-header>
-       <ion-card-title class="titulo" (click)="irvermas(p)"> {{p.titulo}} </ion-card-title>
-       <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
+      <ion-card-title class="titulo" (click)="irvermas(p)"> {{p.titulo}} </ion-card-title>
+      <ion-card-subtitle class="precio">precio:$ {{p.precio}}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>{{p.descripcion}}</ion-card-content>
     </ion-card>
   </div>
 
-  <ion-card>
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>feo david</h2></ion-text>
-  </ion-card>
-  
-  <ion-card>
-    <ion-img src="assets/fotos/2.jpg" class="imagen_2" >
-    </ion-img>
-    
-  <ion-card-header> 
-      <ion-card-title> SUS GAFAS </ion-card-title>
-      <ion-card-subtitle color="danger"> SON FEAS </ion-card-subtitle>
-  </ion-card-header>  
-  
-    <ion-text>
-    <h2>David no sabe nada</h2>
-    </ion-text>
-  </ion-card>
   
   <ion-card>
   <ion-card-header>
@@ -118,59 +85,10 @@
         <ion-label>TIENE SARNA</ion-label>
       </ion-item>
     </ion-list>
-
   </ion-card-content>
 </ion-card>
-
-<ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-<div class="carg">
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-  </ion-card>
-
-  <ion-card class="card2">
-     <ion-img src = "assets/fotos/3.webp"  class="imagen_1"></ion-img> 
-     <ion-text><h1>HOLA </h1></ion-text>
-    <ion-text><h2>SOY UNA PAPA FEA</h2></ion-text>
-</ion-card>
-</div>
-
-
-
-</ion-content>
 
 <app-footer-global>
   
 </app-footer-global>
+</ion-content>

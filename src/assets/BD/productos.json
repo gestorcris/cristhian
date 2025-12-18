@@ -1,164 +1,182 @@
 [
     {
         "id": 1,
-        "titulo": "PAPA PAPA",
-        "precio": 1,
-        "descripcion": "PAPA PAPA ES EL MAYOR DE TODAS LAS PPAS Y ES EL ENCARGADO DE CUIDARLOS A QUE NADA LES PASE",
+        "titulo": "Papa Super Grande",
+        "precio": 1.5,
+        "descripcion": "Una papa de tamaño excepcional, ideal para asar o para un puré abundante.",
         "imagen": "assets/fotos/pp.jpeg",
         "categoria": "PAPA GRANDES",
-        "subcategoria": "PAPAS MAYORES"
+        "subcategoria": "GRANDES"
     },
     {
         "id": 2,
-        "titulo": "HIJO PAPA",
-        "precio":2,
-        "descripcion": "POPTATO 2",
+        "titulo": "Papa Vieja de Cosecha",
+        "precio": 1.2,
+        "descripcion": "Papa de cosecha anterior, con una piel más gruesa y un sabor terroso intenso.",
         "imagen": "assets/fotos/ppp.jpg",
         "categoria": "PAPA GRANDES",
         "subcategoria": "VIEJAS"
     },
     {
         "id": 3,
-        "titulo": "Gatito panzon",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Mayor Jerarca",
+        "precio": 1.8,
+        "descripcion": "La papa más grande y madura de la cosecha, perfecta para platos principales.",
         "imagen": "assets/fotos/pn.png",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "PAPA GRANDES",
+        "subcategoria": "MAYORES"
     },
     {
         "id": 4,
-        "titulo": "b",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Gorda para Freír",
+        "precio": 1.3,
+        "descripcion": "Papa de contextura robusta, ideal para hacer papas fritas crujientes y doradas.",
         "imagen": "assets/fotos/pp.jpeg",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Perros"
+        "categoria": "TIPO DE PAPA",
+        "subcategoria": "GORDA"
     },
     {
         "id": 5,
-        "titulo": "c",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Blanda para Puré",
+        "precio": 1.1,
+        "descripcion": "Su textura suave y cremosa la hace la elección perfecta para un puré casero.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Videojuegos",
-        "subcategoria": "Guerra de Consolas"
+        "categoria": "TIPO DE PAPA",
+        "subcategoria": "BLANDA"
     },
     {
         "id": 6,
-        "titulo": "d",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Flaca para Ensalada",
+        "precio": 1.0,
+        "descripcion": "Papa delgada y firme, mantiene su forma al cocerse, ideal para ensaladas.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Clásicos de Internet",
-        "subcategoria": "Rage Comics"
+        "categoria": "TIPO DE PAPA",
+        "subcategoria": "FLACA"
     },
     {
         "id": 7,
-        "titulo": "e",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa de Piel Café",
+        "precio": 1.4,
+        "descripcion": "Clásica papa de piel café, versátil para cualquier tipo de preparación culinaria.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Humor Negro",
-        "subcategoria": "Cotidiano"
+        "categoria": "COLOR DE PAPA",
+        "subcategoria": "CAFECES"
     },
     {
         "id": 8,
-        "titulo": "aa",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Blanca Nevada",
+        "precio": 1.6,
+        "descripcion": "De piel clara y carne blanca, excelente para hervir y para sopas.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "COLOR DE PAPA",
+        "subcategoria": "BLANCAS"
     },
     {
         "id": 9,
-        "titulo": "bb",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Amarilla Dorada",
+        "precio": 1.7,
+        "descripcion": "Con su característico color dorado, aporta un sabor mantecoso a los platos.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "COLOR DE PAPA",
+        "subcategoria": "AMARILLO"
     },
     {
         "id": 10,
-        "titulo": "cc",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Costeña Tropical",
+        "precio": 1.9,
+        "descripcion": "Cultivada en la costa, con un toque de sabor único por el clima tropical.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "subcategoria": "COSTA"
     },
     {
         "id": 11,
-        "titulo": "Sistema de gestion de tareas",
-        "des": "Sigesta es una plataforma integral diseñada para optimizar el flujo de trabajo y la organización personal. Permite crear, asignar y monitorear tareas en tiempo real, garantizando que nunca pierdas de vista tus objetivos prioritarios mediante una interfaz intuitiva y eficiente",
+        "titulo": "Papa Andina de la Sierra",
+        "precio": 2.0,
+        "descripcion": "Crecida en las alturas de la sierra, con una textura firme y sabor profundo.",
         "imagen": "assets/fotos/pp.jpeg",
-        "categoria": "Imágenes Random",
-        "subcategoria": "WTF"
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "subcategoria": "SIERRA"
     },
     {
         "id": 12,
-        "titulo": "a",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Amazónica del Oriente",
+        "precio": 2.1,
+        "descripcion": "Una variedad exótica del oriente, con notas de sabor que sorprenden.",
         "imagen": "assets/fotos/ppp.jpg",
-        "categoria": "Humor Absurdo",
-        "subcategoria": "Surrealistas"
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "subcategoria": "ORIENTE"
     },
     {
         "id": 13,
-        "titulo": "Gatito panzon",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Grande para Rellenar",
+        "precio": 1.7,
+        "descripcion": "Su gran tamaño la hace ideal para rellenar con tus ingredientes favoritos.",
         "imagen": "assets/fotos/pn.png",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "PAPA GRANDES",
+        "subcategoria": "GRANDES"
     },
     {
         "id": 14,
-        "titulo": "b",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Vieja para Caldos",
+        "precio": 1.1,
+        "descripcion": "Aporta un sabor concentrado y tradicional a caldos y estofados.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Pájaros"
+        "categoria": "PAPA GRANDES",
+        "subcategoria": "VIEJAS"
     },
     {
         "id": 15,
-        "titulo": "c",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Robusta y Gorda",
+        "precio": 1.4,
+        "descripcion": "Una papa con cuerpo, perfecta para quienes buscan una porción generosa.",
         "imagen": "assets/fotos/ppp.jpg",
-        "categoria": "Memes de Videojuegos",
-        "subcategoria": "PC Master Race"
+        "categoria": "TIPO DE PAPA",
+        "subcategoria": "GORDA"
     },
     {
         "id": 16,
-        "titulo": "d",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Suave y Blanda",
+        "precio": 1.2,
+        "descripcion": "Ideal para los más pequeños por su textura suave y fácil de masticar.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Clásicos de Internet",
-        "subcategoria": "Advice Animals"
+        "categoria": "TIPO DE PAPA",
+        "subcategoria": "BLANDA"
     },
     {
         "id": 17,
-        "titulo": "e",
-        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, mayores officia eius, expedita ipsa?",
+        "titulo": "Papa Café Orgánica",
+        "precio": 1.8,
+        "descripcion": "Cultivada sin pesticidas, esta papa café es tan saludable como deliciosa.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Humor Negro",
-        "subcategoria": "Históricos"
+        "categoria": "COLOR DE PAPA",
+        "subcategoria": "CAFECES"
     },
     {
         "id": 18,
-        "titulo": "aa",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Blanca Premium",
+        "precio": 1.9,
+        "descripcion": "Seleccionada por su pureza y calidad, es la reina de las papas blancas.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "COLOR DE PAPA",
+        "subcategoria": "BLANCAS"
     },
     {
         "id": 19,
-        "titulo": "bb",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa Serrana Tradicional",
+        "precio": 2.2,
+        "descripcion": "El sabor auténtico de los Andes en una papa cultivada con métodos tradicionales.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "subcategoria": "SIERRA"
     },
     {
         "id": 20,
-        "titulo": "cc",
-        "des": "Un gatito panzon a tan solo: $100",
+        "titulo": "Papa de la Costa Soleada",
+        "precio": 2.0,
+        "descripcion": "Madurada bajo el sol de la costa, esta papa tiene un sabor dulce y especial.",
         "imagen": "assets/fotos/3.webp",
-        "categoria": "Memes de Animales",
-        "subcategoria": "Gatos"
+        "categoria": "LUGAR DE CRECIMIENTO",
+        "subcategoria": "COSTA"
     }
 ]

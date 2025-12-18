@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { IonContent, IonHeader, IonTitle, IonToolbar,IonButtons } from '@ionic/angular/standalone';
+import {} from '@ionic/angular/standalone';
 import { IonicModule } from '@ionic/angular';
 import { Router, RouterModule } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './footer-global.component.html',
   styleUrls: ['./footer-global.component.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule,IonButtons, IonicModule, RouterModule]
+  imports: [ CommonModule, IonicModule, RouterModule]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class FooterGlobalComponent  implements OnInit {

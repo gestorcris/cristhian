@@ -15,11 +15,10 @@ h1, h2 {
   margin-bottom: 10px;
 }
 .card2 {
-    width: 200px;
-    margin: 20px auto;
+    width: 100%;
+    margin: 10px auto;
     border-radius: 18px;
-    box-shadow: 20 20px 20px rgb(255, 8, 0)
-    ;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .img {
@@ -114,4 +113,61 @@ h1, h2 {
 .fondo {
  --background: #000000;
 
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+  .carg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .carg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-horizontal {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carg {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+  .card2 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    padding: 5px 0 0;
+    min-width: auto;
+    display: none; /* Ocultar por defecto en móvil */
+  }
+
+  .item:hover .submenu,
+  .item:focus-within .submenu {
+    display: block; /* Mostrar en hover o focus */
+    max-height: none;
+  }
+
+  .submenu li {
+    padding: 5px 10px;
+    text-align: center;
+  }
 }
